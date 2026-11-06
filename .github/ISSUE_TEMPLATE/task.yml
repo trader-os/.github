@@ -1,0 +1,26 @@
+name: Task
+description: A specific, well-scoped piece of work (chore, refactor, ops, docs).
+title: "[Task]: "
+type: Task
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this needed? Link related issues, epics or docs.
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: To do
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: What must be true for this task to be closed?
